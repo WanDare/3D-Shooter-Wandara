@@ -14,13 +14,38 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         controls = new PlayerControls();
-        aim = GetComponent<PlayerAim>();
-        movement = GetComponent<PlayerMovement>();
-        weapon = GetComponent<PlayerWeaponController>();
-        weaponVisuals = GetComponent<PlayerWeaponVisuals>();
-        interaction = GetComponent<PlayerInteraction>();
 
+        aim = GetComponent<PlayerAim>();
+        if (aim == null)
+        {
+            Debug.LogError("PlayerAim component missing on " + gameObject.name);
+        }
+
+        movement = GetComponent<PlayerMovement>();
+        if (movement == null)
+        {
+            Debug.LogError("PlayerMovement component missing on " + gameObject.name);
+        }
+
+        weapon = GetComponent<PlayerWeaponController>();
+        if (weapon == null)
+        {
+            Debug.LogError("PlayerWeaponController component missing on " + gameObject.name);
+        }
+
+        weaponVisuals = GetComponent<PlayerWeaponVisuals>();
+        if (weaponVisuals == null)
+        {
+            Debug.LogError("PlayerWeaponVisuals component missing on " + gameObject.name);
+        }
+
+        interaction = GetComponent<PlayerInteraction>();
+        if (interaction == null)
+        {
+            Debug.LogError("PlayerInteraction component missing on " + gameObject.name);
+        }
     }
+
     private void OnEnable()
     {
         controls.Enable();

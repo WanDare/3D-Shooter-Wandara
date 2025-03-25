@@ -19,15 +19,14 @@ public class PlayerInteraction : MonoBehaviour
         closestInteractable?.Interaction();
         interactables.Remove(closestInteractable);
 
-        UpdateCloseInteractable();
+        UpdateClosestInteractable();
     }
 
-    public void UpdateCloseInteractable()
+    public void UpdateClosestInteractable()
     {
-        closestInteractable?.HighlightActive(false);
+        closestInteractable?.HighlightActive(false); // Disable highlight on the old one if it exists
 
         closestInteractable = null;
-
         float closestDistance = float.MaxValue;
 
         foreach (Interactable interactable in interactables)
@@ -41,8 +40,16 @@ public class PlayerInteraction : MonoBehaviour
             }
         }
 
-        closestInteractable?.HighlightActive(true);
+        if (closestInteractable != null)
+        {
+            closestInteractable.HighlightActive(true);
+        }
+        else
+        {
+            Debug.LogWarning("No interactables in range to highlight.");
+        }
     }
-    
+
+
     public List<Interactable> GetInteractables() => interactables;
 }
