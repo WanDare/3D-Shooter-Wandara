@@ -42,7 +42,7 @@ public class Interactable : MonoBehaviour
         if (playerInteraction == null)
             return;
 
-        playerInteraction.interactables.Add(this);
+        playerInteraction.GetInteractables().Add(this);
         playerInteraction.UpdateCloseInteractable();
     }
 
@@ -53,7 +53,7 @@ public class Interactable : MonoBehaviour
         if (playerInteraction == null)
             return;
         
-        playerInteraction.interactables.Remove(this);
+        playerInteraction.GetInteractables().Remove(this);
         playerInteraction.UpdateCloseInteractable();
     }
 }

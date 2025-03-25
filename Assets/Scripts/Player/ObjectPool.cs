@@ -12,6 +12,9 @@ public class ObjectPool : MonoBehaviour
     private Dictionary<GameObject, Queue<GameObject>> poolDictionary =
         new Dictionary<GameObject, Queue<GameObject>>();
 
+
+    [Header("To Initialize")]
+    [SerializeField] private GameObject weaponPickup;
     private void Awake()
     {
         if (instance == null)
@@ -21,6 +24,12 @@ public class ObjectPool : MonoBehaviour
 
 
     }
+
+    private void Start()
+    {
+        InitializeNewPool(weaponPickup);
+    }
+
     public GameObject GetObject(GameObject prefab)
     {
         if (poolDictionary.ContainsKey(prefab) == false)
