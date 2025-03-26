@@ -15,7 +15,7 @@ MonoBehaviour:
   weaponName: AWP Z
   bulletsInMagazine: 15
   magazineCapacity: 15
-  totalReserveAmmo: 0
+  totalReserveAmmo: 55555
   shootType: 0
   bulletsPerShot: 1
   fireRate: 1.5

@@ -15,7 +15,7 @@ MonoBehaviour:
   weaponName: P290
   bulletsInMagazine: 20
   magazineCapacity: 20
-  totalReserveAmmo: 2147483647
+  totalReserveAmmo: 55555
   shootType: 0
   bulletsPerShot: 1
   fireRate: 4
