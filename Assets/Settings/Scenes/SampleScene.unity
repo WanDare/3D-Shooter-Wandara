@@ -5196,7 +5196,7 @@ Transform:
   m_GameObject: {fileID: 877480760}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.55, y: 0, z: 3.68}
+  m_LocalPosition: {x: 7.39, y: 0, z: -2.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -10664,7 +10664,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf9d74d27ce922048afd5851bc6975b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnSpeed: 0.5
+  turnSpeed: 2
+  aggressionRange: 6
   idleTime: 2
   moveSpeed: 0
   patrolPoints:
@@ -10680,7 +10681,7 @@ Transform:
   m_GameObject: {fileID: 1787110294}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0105239, y: 0.038, z: 0.7060877}
+  m_LocalPosition: {x: -7.66, y: 0.038, z: 9.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11471,7 +11472,7 @@ Transform:
   m_GameObject: {fileID: 2006409167}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.07, y: 0, z: 6.07}
+  m_LocalPosition: {x: 12.513, y: 0, z: -2.965}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
