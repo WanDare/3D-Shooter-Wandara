@@ -28,6 +28,6 @@ public class RecoveryState_Melee : EnemyState
         enemy.transform.rotation = enemy.FaceTarget(enemy.player.position);
 
         if (triggerCalled)
-            Debug.Log("I'm suppose change state now!");
+            stateMachine.ChangeState(enemy.chaseState);
     }
 }

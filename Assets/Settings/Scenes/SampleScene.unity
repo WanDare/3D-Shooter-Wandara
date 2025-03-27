@@ -5995,7 +5995,7 @@ Transform:
   m_GameObject: {fileID: 951056233}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0, z: -0, w: 0.8660254}
-  m_LocalPosition: {x: 0.0245, y: -3.8571405, z: 6.6327}
+  m_LocalPosition: {x: 0.0245, y: -1.6920767, z: 5.3827}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6347,7 +6347,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0, z: -0, w: 0.8660254}
-  m_LocalPosition: {x: 0.0245, y: -3.8571405, z: 6.6327}
+  m_LocalPosition: {x: 0.0245, y: -1.6920767, z: 5.3827}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10667,7 +10667,8 @@ MonoBehaviour:
   turnSpeed: 2
   aggressionRange: 6
   idleTime: 2
-  moveSpeed: 0
+  moveSpeed: 1.5
+  chaseSpeed: 3.5
   patrolPoints:
   - {fileID: 877480761}
   - {fileID: 2006409168}
@@ -12627,7 +12628,7 @@ MonoBehaviour:
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_CameraDistance: 4.5
+  m_CameraDistance: 7
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
@@ -20485,6 +20486,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8986639421400065728}
   - component: {fileID: 3050863447801560250}
+  - component: {fileID: 8986639421400065729}
   m_Layer: 0
   m_Name: enemy_character_1
   m_TagString: Untagged
@@ -20773,7 +20775,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8646106838781328506}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
@@ -20782,6 +20784,18 @@ Transform:
   - {fileID: 7185505155765540566}
   m_Father: {fileID: 1787110297}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8986639421400065729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8646106838781328506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74e0b5ab14cf1664a8cfb366af41db59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8989860573168727288
 Transform:
   m_ObjectHideFlags: 0
