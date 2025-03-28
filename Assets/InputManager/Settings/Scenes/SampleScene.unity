@@ -10754,16 +10754,31 @@ MonoBehaviour:
   aggressionRange: 6
   moveSpeed: 1.5
   chaseSpeed: 4
-  turnSpeed: 2
+  turnSpeed: 5
   patrolPoints:
   - {fileID: 877480761}
   - {fileID: 2006409168}
   - {fileID: 1051381138}
   attackData:
+    attackName: 
     attackRange: 1
-    moveSpeed: 2.5
+    moveSpeed: 0
     attackIndex: 1
+    animationSpeed: 1.4
+    attackType: 0
+  attackList:
+  - attackName: Sword spin attack
+    attackRange: 1.5
+    moveSpeed: 2.5
+    attackIndex: 0
     animationSpeed: 1
+    attackType: 1
+  - attackName: Sword slash
+    attackRange: 1
+    moveSpeed: 0
+    attackIndex: 1
+    animationSpeed: 1.5
+    attackType: 0
   hiddenWeapon: {fileID: 711982321}
   PulledWeapon: {fileID: 5281147170726328632}
 --- !u!4 &1787110297
